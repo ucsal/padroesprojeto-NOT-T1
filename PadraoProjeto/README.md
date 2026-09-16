@@ -1,18 +1,3 @@
-## Getting Started
+## State
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
-
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+O padrão state tem como objetivo gerar diferentes com base no estado de uma objeto, fazendo com que seja reduzido drasticamente a quantidade de ifs utilizados em um código, e ao mesmo tempo fazendo com que o comportamento esperado de acordo com o estado do objeto, seja a mesma regra em qualquer local do código, já que a condição do que é executado se torna responsabilidade do próprio objeto, e não do fluxo de código que o implementa, por exemplo: Ao invés da execução de um método ser definido por uma condicional ou case em um fluxo de código, o próprio objeto sabe como se portar com base no valor de um atributo que representa o estado de um objeto.
