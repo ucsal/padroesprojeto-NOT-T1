@@ -1,18 +1,3 @@
-## Getting Started
+## Template Method
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
-
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+O Template method é uma padrão que tem como objetivo o reaproveitamento de métodos de uma classe abstrata, onde as implementações lidam apenas com os métodos que são definidos como personalizáveis, evitando a repetição de código e fazendo com que a manutenção ou refatoração do código se torne muito mais rápida, já que as mudanças no método podem ser feitas apenas em uma classe, sendo a de abstração, ao mesmo tempo que gera um contrato para todas as classes que desejam utilizar do comportamento.
